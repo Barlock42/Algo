@@ -6,7 +6,6 @@
 
 
 using System;
-using System.Linq;
 
 namespace Algo
 {
@@ -18,8 +17,6 @@ namespace Algo
             SearchRange(nums, 8);
 
             Console.WriteLine("Hello World!");
-
-
         }
 
         static public int[] SearchRange(int[] nums, int target)
