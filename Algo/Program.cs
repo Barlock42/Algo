@@ -16,7 +16,9 @@ namespace Algo
             int[] nums = new int[] { 5, 7, 7, 8, 8, 10 };
             SearchRange(nums, 8);
 
-            Console.WriteLine("Hello World!");
+            nums = new int[] { 4, 5, 6, 7, 0, 1, 2 };
+            var result = BinarySearch.FindIndex(nums, 0);
+            Console.WriteLine(result);
         }
 
         static public int[] SearchRange(int[] nums, int target)
