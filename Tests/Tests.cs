@@ -12,7 +12,7 @@ namespace Algo.Tests
             int target = 8;
             int[] expected = { 3, 4 };
             int[] result = Algo.SearchRange(nums, target);
-            Assert.AreEqual(expected, result);
+            Assert.AreEqual(expected, result); //
         }
 
         [Test]
