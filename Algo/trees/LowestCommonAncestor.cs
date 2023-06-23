@@ -8,18 +8,22 @@
  * }
  */
 
-public class Solution {
-    public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+public class Solution
+{
+    public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
+    {
         // Traverse Right child
-        if (p.val > root.val && q.val > root.val) {
+        if (p.val > root.val && q.val > root.val)
+        {
             return LowestCommonAncestor(root.right, p, q);
         }
-        
+
         // Traverse Left Child
-        if (p.val < root.val && q.val < root.val) {
+        if (p.val < root.val && q.val < root.val)
+        {
             return LowestCommonAncestor(root.left, p, q);
         }
-        
+
         return root;
     }
 }
