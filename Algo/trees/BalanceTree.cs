@@ -11,16 +11,20 @@
  *     }
  * }
  */
-public class Solution {
+public class Solution
+{
     private bool _result = true;
 
-    public bool IsBalanced(TreeNode root) {
+    public bool IsBalanced(TreeNode root)
+    {
         Dfs(root);
         return _result;
     }
 
-    private int Dfs(TreeNode root) {
-        if(root == null) {
+    private int Dfs(TreeNode root)
+    {
+        if (root == null)
+        {
             return -1;
         }
 

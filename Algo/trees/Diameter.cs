@@ -11,16 +11,20 @@
  *     }
  * }
  */
-public class Solution {
+public class Solution
+{
     int result = -1;
-    
-    public int DiameterOfBinaryTree(TreeNode root) {
+
+    public int DiameterOfBinaryTree(TreeNode root)
+    {
         dfs(root);
         return result;
     }
-    
-    private int dfs(TreeNode current) {
-        if (current == null) {
+
+    private int dfs(TreeNode current)
+    {
+        if (current == null)
+        {
             return -1;
         }
         int left = 1 + dfs(current.left);
